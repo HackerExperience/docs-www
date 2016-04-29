@@ -1,0 +1,78 @@
+@import "custom/variables";
+@import "compass";
+
+body {
+  display: flex;
+  flex-direction: column;
+}
+
+main {
+  flex: 1;
+}
+
+footer {
+  flex: 0;
+}
+
+.page-title {
+  h1 {
+    @include single-text-shadow(2px, 2px, 0, rgba(#333, 0.5));
+    font-size: 3em;
+    font-weight: 400;
+    padding: 0 16px;
+    text-align: center;
+  }
+}
+
+.index-buttons-container {
+  a {
+    text-decoration: none;
+  }
+
+  .index-button {
+    text-align: center;
+
+    .index-button-internal {
+      background-color: rgba(grayscale(desaturate(darken($color-index-button, 15%), 33%)), 0.75);
+      background-image: image-url("swirl.png");
+      padding: 16px;
+    }
+
+    .index-button-icon i,
+    .index-button-title,
+    .index-button-description {
+      color: $color-index-button-dark;
+    }
+
+    &:hover {
+      .index-button-icon i,
+      .index-button-title,
+      .index-button-description {
+        color: #FFF;
+      }
+
+      .index-button-internal {
+        background-color: rgba($color-index-button, 0.75);
+      }
+    }
+
+    .index-button-icon i,
+    .index-button-title {
+      text-shadow: 1px 1px 0 rgba(lighten($color-index-button-dark, 15%), 0.66);
+    }
+
+    .index-button-icon i {
+      font-size: 5em;
+    }
+
+    .index-button-title {
+      font-size: 2.5em;
+    }
+
+    .index-button-description {
+      font-size: 1.4em;
+    }
+  }
+}
+
+@import "custom/footer";

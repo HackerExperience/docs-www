@@ -1,0 +1,24 @@
+footer {
+  background: #DDD;
+  padding: 16px 0;
+
+  ul {
+    list-style: none;
+  }
+
+  strong {
+    font-size: 1.25em;
+  }
+
+  a {
+    color: $footer-link-color;
+    text-decoration: none;
+
+    &:hover,
+    &:focus,
+    &:active {
+      color: darken($footer-link-color, 15%);
+      text-decoration: none;
+    }
+  }
+}

@@ -1,0 +1,30 @@
+{
+  "sections": [
+    {
+      "url": "",
+      "icon": "whatshot",
+      "title": "Helix",
+      "description": "Suspendisse faucibus fringilla nulla, eget pharetra erat pharetra quis."
+    },
+    {
+      "url": "",
+      "icon": "assignment_ind",
+      "title": "Phoebe",
+      "description": "Vivamus et scelerisque leo, quis maximus ante. Mauris pulvinar."
+    }
+  ],
+  "navbar": [
+    {
+      "url": "/",
+      "title": "Home"
+    },
+    {
+      "url": "https://hackerexperience.com",
+      "title": "Hacker Experience 2"
+    },
+    {
+      "url": "http://letsbuildagame.com",
+      "title": "Let's build a game"
+    }
+  ]
+}

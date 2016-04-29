@@ -1,0 +1,5 @@
+header.site-header: nav.navbar.navbar-inverse: .container
+  .navbar-collapse.collapse.in
+    ul.nav.navbar-nav
+      each item in navbar
+        li: a(href= item.url)= item.title

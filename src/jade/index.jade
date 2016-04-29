@@ -1,0 +1,34 @@
+mixin stylesheet(href, media)
+  if media
+    link(rel="stylesheet" type="text/css" media= media href= href)&attributes(attributes)
+  else
+    link(rel="stylesheet" type="text/css" media="all" href= href)&attributes(attributes)
+
+doctype html
+html
+  head
+    title Hacker Experience 2 - Documentation
+
+    meta(http-equiv="Content-Type" content="text/html; charset=UTF-8")
+    meta(name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0")
+    meta(name="robots" content="index, follow")
+    +stylesheet("https://fonts.googleapis.com/css?family=Roboto:400,700|Raleway:400,700")
+    +stylesheet("https://fonts.googleapis.com/icon?family=Material+Icons")
+    +stylesheet("/assets/css/vendor.css")
+    +stylesheet("/assets/css/custom.css")
+    
+  body
+    include includes/header
+
+    main.container
+      .page-title: h1 Documents
+      .index-buttons-container
+        ul.small-block-grid-1.medium-block-grid-2
+          each item in sections
+            li: .index-button: a(href= item.url): .index-button-internal
+              .index-button-icon
+                i.material-icons= item.icon
+              h3.index-button-title= item.title
+              .index-button-description!= item.description
+
+    include includes/footer
