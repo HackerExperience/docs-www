@@ -1,16 +1,16 @@
 {
   "sections": [
     {
-      "url": "",
-      "icon": "whatshot",
-      "title": "Helix",
-      "description": "Suspendisse faucibus fringilla nulla, eget pharetra erat pharetra quis."
+      "url": "/specs",
+      "icon": "lightbulb_outline",
+      "title": "Specifications",
+      "description": "HE2 principles, goals, design and mechanics."
     },
     {
-      "url": "",
-      "icon": "assignment_ind",
-      "title": "Phoebe",
-      "description": "Vivamus et scelerisque leo, quis maximus ante. Mauris pulvinar."
+      "url": "/heeps",
+      "icon": "build",
+      "title": "HEEPs",
+      "description": "HEEPs are proposals to modify and improve HE2."
     }
   ],
   "navbar": [
@@ -23,7 +23,7 @@
       "title": "Hacker Experience 2"
     },
     {
-      "url": "http://letsbuildagame.com",
+      "url": "https://letsbuildagame.org",
       "title": "Let's build a game"
     }
   ]
